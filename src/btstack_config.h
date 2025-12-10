@@ -19,14 +19,14 @@
 #define MAX_NR_AVRCP_CONNECTIONS 2
 #define MAX_NR_BNEP_CHANNELS 1
 #define MAX_NR_BNEP_SERVICES 1
-#define MAX_NR_BTSTACK_LINK_KEY_DB_MEMORY_ENTRIES  2
+#define MAX_NR_BTSTACK_LINK_KEY_DB_MEMORY_ENTRIES 2
 #define MAX_NR_GATT_CLIENTS 1
 #define MAX_NR_HCI_CONNECTIONS 2
 #define MAX_NR_HID_HOST_CONNECTIONS 1
 #define MAX_NR_HIDS_CLIENTS 1
 #define MAX_NR_HFP_CONNECTIONS 1
-#define MAX_NR_L2CAP_CHANNELS  4
-#define MAX_NR_L2CAP_SERVICES  3
+#define MAX_NR_L2CAP_CHANNELS 4
+#define MAX_NR_L2CAP_SERVICES 3
 #define MAX_NR_RFCOMM_CHANNELS 1
 #define MAX_NR_RFCOMM_MULTIPLEXERS 1
 #define MAX_NR_RFCOMM_SERVICES 1
@@ -35,11 +35,13 @@
 #define MAX_NR_WHITELIST_ENTRIES 16
 #define MAX_NR_LE_DEVICE_DB_ENTRIES 16
 
-// Limit number of ACL/SCO Buffer to use by stack to avoid cyw43 shared bus overrun
+// Limit number of ACL/SCO Buffer to use by stack to avoid cyw43 shared bus
+// overrun
 #define MAX_NR_CONTROLLER_ACL_BUFFERS 3
 #define MAX_NR_CONTROLLER_SCO_PACKETS 3
 
-// Enable and configure HCI Controller to Host Flow Control to avoid cyw43 shared bus overrun
+// Enable and configure HCI Controller to Host Flow Control to avoid cyw43
+// shared bus overrun
 #define ENABLE_HCI_CONTROLLER_TO_HOST_FLOW_CONTROL
 #define HCI_HOST_ACL_PACKET_LEN 1024
 #define HCI_HOST_ACL_PACKET_NUM 3
@@ -67,8 +69,9 @@
 
 #define HAVE_BTSTACK_STDIN
 
-// To get the audio demos working even with HCI dump at 115200, this truncates long ACL packetws
-//#define HCI_DUMP_STDOUT_MAX_SIZE_ACL 100
+// To get the audio demos working even with HCI dump at 115200, this truncates
+// long ACL packetws
+// #define HCI_DUMP_STDOUT_MAX_SIZE_ACL 100
 
 #ifdef ENABLE_CLASSIC
 #define ENABLE_L2CAP_ENHANCED_RETRANSMISSION_MODE
